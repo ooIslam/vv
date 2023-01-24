@@ -1,0 +1,306 @@
+/* Add some basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0; /* remove the default margin */
+    padding: 0; /* remove the default padding */
+    margin-left: -21px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+  display: block;
+}
+nav a:hover {
+  background-color: #444;
+}
+nav .current {
+  background-color: #444;
+}
+
+section {
+  padding: 20px;
+}
+
+section#home img {
+  width: 100%;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+}
+/* CSS Animations */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+section h1,
+section h2,
+section p {
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+/* CSS Transitions */
+section h1,
+section h2,
+section p {
+  transition: all 0.5s ease-in-out;
+}
+section h1:hover,
+section h2:hover,
+section p:hover {
+  color: blue;
+  font-size: 20px;
+}
+/* Add a background color to the body */
+body {
+  background-color: #f5f5f5;
+}
+
+/* Add a border and padding to the sections */
+section {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 8px #ccc;
+}
+
+/* Add some spacing and styling to the headings */
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Add a background color and padding to the form */
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Add a border to the inputs and textarea */
+form input,
+form textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Add a background color and hover effect to the submit button */
+form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+main {
+  padding-top: 60px; /* adjust this value to match the height of your header element */
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* Default styles for desktop */
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav li {
+  float: left;
+}
+nav a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+section {
+  padding: 20px;
+}
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+form input[type="submit"] {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Media query for devices with a screen width less than 600px */
+@media (max-width: 600px) {
+  /* Change the font-size for small screens */
+  body {
+    font-size: 14px;
+  }
+  /* Stack the navigation links vertically */
+  nav ul {
+    flex-direction: column;
+  }
+  /* Make the navigation links take up the full width of the screen */
+  nav li {
+    width: 100%;
+  }
+  /* Center the form on small screens */
+  form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+/* Style the sign-in and sign-up pages */
+section#signin,
+section#signup {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Add a background color to the submit buttons */
+section#signin input[type="submit"],
+section#signup input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Add a hover effect to the submit buttons */
+section#signin input[type="submit"]:hover,
+section#signup input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+section#signin,
+section#signup {
+  width: 48%; /* adjust the width as you need */
+  float: left; /* make the sections float next to each other */
+  margin-right: 4%; /* add a margin to separate them */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto; /* center the sections horizontally */
+  text-align: center; /* center the elements inside the sections */
+}
+section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body {
+    background: linear-gradient(to bottom, #003366, #ffffff);
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+nav {
+    background: linear-gradient(to right, #974c4c, #0e4272);
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
